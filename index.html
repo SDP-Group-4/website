@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RoboTex</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<div class="bg-white">
+    <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <header class="flex justify-between items-center py-4 md:py-8 mb-4">
+            <!-- logo - start -->
+            <a href="index.html" class="inline-flex items-center text-black text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
+                <img src="img/logo-cropped.png" alt="logo" class="h-16">
+            </a>
+            <!-- logo - end -->
+      
+            <!-- nav - start -->
+            <nav class="hidden lg:flex gap-12">
+              <a href="/" class="text-gray-600 hover:text-green-500 text-lg font-semibold">Home</a>
+              <a href="/about" class="text-gray-600 hover:text-green-500 active:text-green-700 text-lg font-semibold">About</a>
+              <a href="team.html" class="text-gray-600 hover:text-green-500 active:text-green-700 text-lg font-semibold">Team</a>
+              <a href="/faq" class="text-gray-600 hover:text-green-500 active:text-green-700 text-lg font-semibold">FAQ</a>
+            </nav>
+            <!-- nav - end -->
+
+            <!-- mobile menu button -->
+
+            <button type="button" id="burger-button" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+              </svg>
+
+              Menu
+            </button>
+
+          <!-- mobile menu button end -->
+
+          </header>
+
+          <div id="mobile-menu" class="hidden flex grid col-1 mb-3">
+            <a href="/" class="text-gray-600 hover:text-green-500 text-lg font-semibold">Home</a>
+            <a href="/about" class="text-gray-600 hover:text-green-500 active:text-green-700 text-lg font-semibold">About</a>
+            <a href="team.html" class="text-gray-600 hover:text-green-500 active:text-green-700 text-lg font-semibold">Team</a>
+            <a href="/faq" class="text-gray-600 hover:text-green-500 active:text-green-700 text-lg font-semibold">FAQ</a>
+            <hr/>
+          </div>
+      
+          <section class="min-h-96 flex justify-center items-center flex-1 shrink-0 overflow-hidden shadow-lg rounded-lg relative py-16 md:py-20 xl:py-48">
+            <!-- video - start -->
+            <video autoplay muted loop class="w-full h-full object-cover object-center absolute inset-0" />
+                <source src="img/LIT.mp4" type="video/mp4">
+            </video>
+            <!-- video - end -->
+      
+            <!-- overlay - start -->
+            <div class="bg-green-400 mix-blend-multiply absolute inset-0 z-1"></div>
+            <!-- overlay - end -->
+      
+            <!-- text start -->
+            <div class="sm:max-w-xl flex flex-col items-center relative p-4 z-2">
+              <p class="text-green-200 text-lg sm:text-xl text-center mb-4 md:mb-8">SDP Group 4</p>
+              <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 md:mb-12">Speech to Written Text!</h1>
+      
+              <div class="w-full flex flex-col sm:flex-row sm:justify-center gap-2.5">      
+                <a href="#" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none px-8 py-3">Learn More</a>
+              </div>
+            </div>
+            <!-- text end -->
+          </section>
+        </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <p class="text-green-500 lg:text-lg font-semibold text-center mb-2 md:mb-3">RoboTex Explained</p>
+      
+          <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">How it Works.</h2>
+
+          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">RoboTex is easy to use. Just follow these steps!</p>
+
+              </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-lg px-4 md:px-8 mx-auto">
+          <div class="flex bg-gray-100 rounded-lg overflow-hidden">
+
+            <!-- image - start -->
+            <div class="sm:w-1/3 lg:w-1/2 hidden sm:block bg-gray-200 relative">
+              <img src="img/mic2.jpeg" loading="lazy" class="w-full h-full object-cover object-center absolute inset-0" />
+            </div>
+            <!-- image - end -->
+      
+            <!-- content - start -->
+            <div class="w-full sm:w-2/3 lg:w-1/2 flex items-center p-4 sm:p-8 lg:pl-10">
+              <div class="w-full flex sm:block flex-col items-center">
+                <div class="">
+                  <h2 class="text-green-500 text-xl sm:text-2xl lg:text-3xl font-bold text-center sm:text-left">Say a Word!</h2>
+                  <p class="text-gray-500 text-center sm:text-left">Say a word into the RoboTex microphone. Alternatively, input via our web applicaiton.</p>
+                </div>      
+              </div>
+            </div>
+            <!-- content - end -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-lg px-4 md:px-8 mx-auto">
+          <div class="flex bg-gray-100 rounded-lg overflow-hidden">
+
+            <!-- content - start -->
+            <div class="w-full sm:w-2/3 lg:w-1/2 flex items-center p-4 sm:p-8 lg:pl-10">
+              <div class="w-full flex sm:block flex-col items-center">
+                <div class="">
+                  <h2 class="text-green-500 text-xl sm:text-2xl lg:text-3xl font-bold text-center sm:text-left">Process Speech.</h2>
+                  <p class="text-gray-500 text-center sm:text-left">RoboTex uses Google's speech recognition api to process the user input. This data is then sent to the RoboTex robot.</p>
+                </div>      
+              </div>
+            </div>
+            <!-- content - end -->
+
+            <!-- image - start -->
+            <div class="sm:w-1/3 lg:w-1/2 hidden sm:block bg-gray-200 relative">
+              <img src="img/cog.jpeg" loading="lazy" class="w-full h-full object-cover object-center absolute inset-0" />
+            </div>
+            <!-- image - end -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-lg px-4 md:px-8 mx-auto">
+          <div class="flex bg-gray-100 rounded-lg overflow-hidden">
+
+            <!-- image - start -->
+            <div class="sm:w-1/3 lg:w-1/2 hidden sm:block bg-gray-200 relative">
+              <img src="img/pen.jpeg" loading="lazy" class="w-full h-full object-cover object-center absolute inset-0" />
+            </div>
+            <!-- image - end -->
+      
+            <!-- content - start -->
+            <div class="w-full sm:w-2/3 lg:w-1/2 flex items-center p-4 sm:p-8 lg:pl-10">
+              <div class="w-full flex sm:block flex-col items-center">
+                <div class="">
+                  <h2 class="text-green-500 text-xl sm:text-2xl lg:text-3xl font-bold text-center sm:text-left">RoboTex Writes.</h2>
+                  <p class="text-gray-500 text-center sm:text-left">RoboTex receives the processed speech and converts it into physically written text.</p>
+                </div>      
+              </div>
+            </div>
+            <!-- content - end -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-lg px-4 md:px-8 mx-auto">
+          <div class="flex bg-gray-100 rounded-lg overflow-hidden">
+
+            <!-- content - start -->
+            <div class="w-full sm:w-2/3 lg:w-1/2 flex items-center p-4 sm:p-8 lg:pl-10">
+              <div class="w-full flex sm:block flex-col items-center">
+                <div class="">
+                  <h2 class="text-green-500 text-xl sm:text-2xl lg:text-3xl font-bold text-center sm:text-left">Observe and Learn!</h2>
+                  <p class="text-gray-500 text-center sm:text-left">Watch how RoboTex moves the pen, demonstrating how to write the input.</p>
+                </div>      
+              </div>
+            </div>
+            <!-- content - end -->
+
+            <!-- image - start -->
+            <div class="sm:w-1/3 lg:w-1/2 hidden sm:block bg-gray-200 relative">
+              <img src="img/happy.jpeg" loading="lazy" class="w-full h-full object-cover object-center absolute inset-0" />
+            </div>
+            <!-- image - end -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <p class="text-green-500 lg:text-lg font-semibold text-center mb-2 md:mb-3">How RoboTex was Built.</p>
+      
+          <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Technical Implementation.</h2>
+      
+          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">A brief overview of some of RoboTex's technical details.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center">
+
+        <div class="m-auto min-w-lg items-center px-2">
+          <div class="mockup-code text-wrap whitespace-normal">
+            <pre data-prefix="$"><code>Raspberry Pi</code></pre> 
+            <pre data-prefix=">" class="text-warning"><code>The Raspberry Pi handles user input via a microphone.</code></pre>
+            <pre data-prefix=">" class="text-warning"><code>This audio data is then stored and sent to our web application.</code></pre> 
+            <pre data-prefix=">" class="text-success"><code>Raspberry Pi ---> Web Server!</code></pre>
+
+            <br/>
+
+            <pre data-prefix="$"><code>Web Server</code></pre> 
+            <pre data-prefix=">" class="text-warning"><code>Our web application acts as an alternative input method.</code></pre>
+            <pre data-prefix=">" class="text-warning"><code>The web app lets teachers register for an account and assign</code></pre>
+            <pre data-prefix="" class="text-warning"><code>specific word groups to certain cohorts of students which they</code></pre>
+            <pre data-prefix="" class="text-warning"><code>can use as inputfor RoboTex.</code></pre>
+            <pre data-prefix=">" class="text-warning"><code>The web server also processes the speech input by sending it to</code></pre>
+            <pre data-prefix="" class="text-warning"><code>the Google Speech Recognition API to be processed.</code></pre>
+            <pre data-prefix=">" class="text-warning"><code>The processed input from either the web app or microphone input is</code></pre>
+            <pre data-prefix="" class="text-warning"><code>then sent to the RoboTex motors.</code></pre>
+            <pre data-prefix=">" class="text-success"><code>Web Server ---> Motors!</code></pre>
+
+            <br/>
+
+            <pre data-prefix="$"><code>Motors</code></pre> 
+            <pre data-prefix=">" class="text-warning"><code>Our EV3 motors receive input from the web server.</code></pre>
+            <pre data-prefix="" class="text-warning"><code>This input is processed and converted into instructions that tell</code></pre>
+            <pre data-prefix="" class="text-warning"><code>RoboTex how and what to write.</code></pre>
+            <pre data-prefix=">" class="text-success"><code>Motors ---> RoboTex!</code></pre>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <p class="text-green-500 lg:text-lg font-semibold text-center mb-2 md:mb-3">Who is RoboTex for?</p>
+      
+          <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Target Market.</h2>
+      
+          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto mb-6">Who have we designed RoboTex for? Take a look at our current market and some plans for future expansion.</p>
+        
+          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto mb-1">RoboTex is currently focused on the education sector. Some areas we envision RoboTex being used for is teaching primary school children between the age of 3 and 6 as well as students with dyslexia.</p>
+          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto mb-1">In the future, we believe that RoboTex can be further developed and be used by students learning other languages like Chiniese and Japanese. We also see potential for RoboTex to be used to teach drawing basic shapes.</p>
+          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto mb-1">We believe that learning tools are important for children and imitative learning is superior to independent learning!</p>
+          
+          <div class="w-1/2 sm:block m-auto mt-4">
+            <img src="img/imitation.png" loading="lazy" class="w-full h-full object-cover object-center rounded-lg" />
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-lg px-4 md:px-8 mx-auto">
+          <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-8 md:mb-12">What people say about RoboTex</h2>
+      
+          <div class="grid md:grid-cols-2 gap-4 md:gap-8">
+            <!-- quote - start -->
+            <div class="flex flex-col items-center bg-green-400 rounded-lg gap-4 md:gap-6 px-8 py-6">
+              <div class="max-w-md text-white lg:text-lg text-center">“I love this product! I couldn't write before RoboTex. Now I have written and published 3 books.”</div>
+      
+              <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
+                <div class="w-12 md:w-14 h-12 md:h-14 bg-gray-100 border-2 border-green-100 rounded-full overflow-hidden">
+                  <img src="img/team/jude.jpg" loading="lazy" class="w-full h-full object-cover object-center" />
+                </div>
+      
+                <div>
+                  <div class="text-white text-sm md:text-base font-bold text-center sm:text-left">Jude Molloy</div>
+                  <p class="text-white text-sm md:text-sm text-center sm:text-left">University Student</p>
+                </div>
+              </div>
+            </div>
+            <!-- quote - end -->
+      
+            <!-- quote - start -->
+            <div class="flex flex-col items-center bg-green-400 rounded-lg gap-4 md:gap-6 px-8 py-6">
+              <div class="max-w-md text-white lg:text-lg text-center">“So glad that this turned out well, there was a lot on the line. I really didn't want to change my name to 'RoboTex L'.”</div>
+      
+              <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-3">
+                <div class="w-12 md:w-14 h-12 md:h-14 bg-gray-100 border-2 border-green-100 rounded-full overflow-hidden">
+                  <img src="img/team/hrishikesh.jpg" loading="lazy" class="w-full h-full object-cover object-center" />
+                </div>
+      
+                <div>
+                  <div class="text-white text-sm md:text-base font-bold text-center sm:text-left">Hrishikesh Srinivasan</div>
+                  <p class="text-white text-sm md:text-sm text-center sm:text-left">Club Promoter</p>
+                </div>
+              </div>
+            </div>
+            <!-- quote - end -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bg-white pt-4">
+        <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">      
+          <div class="text-gray-400 text-sm text-center py-8">© 2022 - RoboTex. All rights reserved.</div>
+        </footer>
+      </div>
+
+    </div>
+
+</body>
+
+<script>
+
+  // MOBILE MENU
+
+  // get html elements
+  const burgerBtn = document.querySelector("#burger-button");
+  const mobileMenu = document.querySelector("#mobile-menu");
+
+  // event listeners
+  burgerBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+  });
+
+
+</script>
+
+</html>

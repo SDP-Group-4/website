@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SDP RoboTex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <header class="flex justify-between items-center py-4 md:py-8 mb-4">
+            <!-- logo - start -->
+            <a href="index.html" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
+                <img src="img/logo-cropped.png" alt="logo" class="h-16">
+      
+              RoboTex
+            </a>
+            <!-- logo - end -->
+      
+            <!-- nav - start -->
+            <nav class="hidden lg:flex gap-12">
+              <a href="index.html" class="text-gray-600 hover:text-green-500 text-lg font-semibold">Home</a>
+              <a href="team.html" class="text-gray-600 hover:text-green-500 text-lg font-semibold">Team</a>
+              <a href="faq.html" class="text-gray-600 hover:text-green-500 text-lg font-semibold">FAQ</a>
+            </nav>
+            <!-- nav - end -->
+
+            <!-- mobile menu button -->
+
+            <button type="button" id="burger-button" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+              </svg>
+
+              Menu
+            </button>
+
+          <!-- mobile menu button end -->
+
+          </header>
+
+          <div id="mobile-menu" class="hidden flex grid col-1 mb-3">
+            <a href="index.html" class="text-gray-600 hover:text-green-500 text-lg font-semibold">Home</a>
+            <a href="team.html" class="text-gray-600 hover:text-green-500 text-lg font-semibold">Team</a>
+            <a href="faq.html" class="text-gray-600 hover:text-green-500 text-lg font-semibold">FAQ</a>
+            <hr/>
+          </div>
+
+          <div class="bg-white py-6 sm:py-8 lg:py-12">
+            <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
+              <!-- text - start -->
+              <div class="mb-10 md:mb-16">
+                <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Meet our Team</h2>
+                        </div>
+              <!-- text - end -->
+          
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 lg:gap-x-8 gap-y-6 sm:gap-y-8 lg:gap-y-12">
+                <!-- person - start -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+                  <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                    <img src="img/team/arnav.jpg" loading="lazy" class="w-full h-full object-cover object-center" />
+                  </div>
+          
+                  <div>
+                    <div class="text-green-500 md:text-lg font-bold text-center sm:text-left">Arnav Sinha</div>
+                    <p class="text-gray-500 text-sm md:text-base text-center sm:text-left">Hardware Team</p>
+                  </div>
+                </div>
+                <!-- person - end -->
+          
+                <!-- person - start -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+                  <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                    <img src="img/team/hrishikesh.jpg" loading="lazy" class="w-full h-full object-cover object-center" />
+                  </div>
+          
+                  <div>
+                    <div class="text-green-500 md:text-lg font-bold text-center sm:text-left">Hrishikesh Srinivasan</div>
+                    <p class="text-gray-500 text-sm md:text-base text-center sm:text-left">Hardware Team</p>
+                  </div>
+                </div>
+                <!-- person - end -->
+          
+                <!-- person - start -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+                  <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                    <img src="img/team/jude.png" loading="lazy" class="w-full h-full object-cover object-center" />
+                  </div>
+          
+                  <div>
+                    <div class="text-green-500 md:text-lg font-bold text-center sm:text-left">Jude Molloy</div>
+                    <p class="text-gray-500 text-sm md:text-base text-center sm:text-left">Software Team</p>
+                  </div>
+                </div>
+                <!-- person - end -->
+          
+                <!-- person - start -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+                  <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                    <img src="img/team/meina.jpg" loading="lazy" class="w-full h-full object-cover object-center" />
+                  </div>
+          
+                  <div>
+                    <div class="text-green-500 md:text-lg font-bold text-center sm:text-left">Meina Lin Wei</div>
+                    <p class="text-gray-500 text-sm md:text-base text-center sm:text-left">Hardware Team</p>
+                  </div>
+                </div>
+                <!-- person - end -->
+          
+                <!-- person - start -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+                  <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                    <img src="img/team/najmi.jpg" loading="lazy" class="w-full h-full object-cover object-center" />
+                  </div>
+          
+                  <div>
+                    <div class="text-green-500 md:text-lg font-bold text-center sm:text-left">Najmi Deraman</div>
+                    <p class="text-gray-500 text-sm md:text-base text-center sm:text-left">Software Team</p>
+                  </div>
+                </div>
+                <!-- person - end -->
+          
+                <!-- person - start -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+                  <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                    <img src="img/team/qiancheng.jpg" loading="lazy" class="w-full h-full object-cover object-center" />
+                  </div>
+          
+                  <div>
+                    <div class="text-green-500 md:text-lg font-bold text-center sm:text-left">Qiancheng Fan</div>
+                    <p class="text-gray-500 text-sm md:text-base text-center sm:text-left">Software Team</p>
+                  </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+                  <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                    <img src="img/team/sarah.png" loading="lazy" class="w-full h-full object-cover object-center" />
+                  </div>
+          
+                  <div>
+                    <div class="text-green-500 md:text-lg font-bold text-center sm:text-left">Sarah Bibb</div>
+                    <p class="text-gray-500 text-sm md:text-base text-center sm:text-left">Software Team</p>
+                  </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-4">
+                  <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-100 rounded-full overflow-hidden shadow-lg">
+                    <img src="img/team/wenxing.jpg" loading="lazy" class="w-full h-full object-cover object-center" />
+                  </div>
+          
+                  <div>
+                    <div class="text-green-500 md:text-lg font-bold text-center sm:text-left">Wenxing Duan</div>
+                    <p class="text-gray-500 text-sm md:text-base text-center sm:text-left">Software Team</p>
+                  </div>
+                </div>
+                <!-- person - end -->
+              </div>
+            </div>
+          </div>
+        
+        </div>
+    </div>
+</body>
+</html>
